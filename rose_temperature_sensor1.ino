@@ -12,7 +12,7 @@ void setup() {
   pinMode(temperature, INPUT);
   mainServo.attach(5);
   
-  Serial.begin(9600);
+  Serial.begin(9000);
 
 }
 
@@ -28,6 +28,6 @@ void loop() {
   Serial.println(position);
   if(previousPosition >30 ){
      mainServo.write(90);
-     delay(1000);
+     delay(1200);
   }
 }
